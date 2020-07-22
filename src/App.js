@@ -1,13 +1,17 @@
-import React from 'react';
-// import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 import OpenlayersMap from "components/map/OpenlayersMap";
 
 function App() {
+  const [visible, setVisible] = useState(true);
+
   return (
     <div>
       <h1>Openlayers workshop</h1>
-      <OpenlayersMap />
+      <div>
+        <button onClick={() => setVisible(!visible)}>show/hidden</button>
+      </div>
+      { visible && <OpenlayersMap /> }
     </div>
   );
 }
