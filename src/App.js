@@ -1,18 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import OpenlayersMap from "components/map/OpenlayersMap";
+import OlMap from "components/map/OlMap";
 
 function App() {
-  const [visible, setVisible] = useState(true);
-
   return (
-    <div>
-      <h1>Openlayers workshop</h1>
-      <div>
-        <button onClick={() => setVisible(!visible)}>show/hidden</button>
-      </div>
-      { visible && <OpenlayersMap /> }
-    </div>
+    <>
+      <OlMap/>
+    </>
   );
 }
 

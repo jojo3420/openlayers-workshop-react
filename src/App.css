@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/**
+ * The zoomslider in the second map shall be placed between the zoom-in and
+ * zoom-out buttons.
+ */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/*.ol-zoom .ol-zoom-out {*/
+/*  margin-top: 204px;*/
+/*}*/
+/*.ol-zoomslider {*/
+/*  background-color: transparent;*/
+/*  top: 2.3em;*/
+/*}*/
 
-.App-link {
-  color: #61dafb;
-}
+/*.ol-touch .ol-zoom .ol-zoom-out {*/
+/*  margin-top: 212px;*/
+/*}*/
+/*.ol-touch .ol-zoomslider {*/
+/*  top: 2.75em;*/
+/*}*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*.ol-zoom-in.ol-has-tooltip:hover [role=tooltip],*/
+/*.ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {*/
+/*  top: 3px;*/
+/*}*/
+
+/*.ol-zoom-out.ol-has-tooltip:hover [role=tooltip],*/
+/*.ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {*/
+/*  top: 232px;*/
+/*}*/
+
+
+ /*ScaleLine */
+.ol-scale-line {
+  background: wheat;
+}
+.ol-scale-line-inner {
+  background-color: rebeccapurple;
+  border: 2px solid red;
+}
+.ol-scale-line-inner:hover {
+  background-color: rosybrown;
+  border: 2px solid red;
+
 }
