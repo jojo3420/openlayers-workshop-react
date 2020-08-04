@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import 'ol/ol.css';
 import 'ol-layerswitcher/src/ol-layerswitcher.css';
+import './OlMap.css';
 import {createMap, createMousePosition, createOverlay} from "lib/openlayers-map";
 import PopUp from "components/map/PopUp";
 import SearchBox from "components/map/SearchBox";
