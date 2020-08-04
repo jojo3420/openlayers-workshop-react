@@ -1,7 +1,8 @@
 import React, {Fragment, useRef, useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
-import 'ol/ol.css';
 import styled from 'styled-components';
+import 'ol/ol.css';
+import 'ol-layerswitcher/src/ol-layerswitcher.css';
 import {createMap, createMousePosition, createOverlay} from "lib/openlayers-map";
 import PopUp from "components/map/PopUp";
 import SearchBox from "components/map/SearchBox";
@@ -23,7 +24,7 @@ const getInnerHTML = () => {
    따라서 React에서 직접 HTML을 설정할 수는 있지만, 위험하다는 것을 상기시키기 위해
    dangerouslySetInnerHTML을 작성하고 __html 키로 객체를 전달 해야 합니다. 아래는 예시입니다.
    */
-  return {__html: '<Fragment id="search-box-target"></Fragment>'};
+  return {__html: '<Fragment id="search-box-target"/>'};
 };
 
 function OlMap({ }) {
