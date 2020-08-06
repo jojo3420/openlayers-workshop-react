@@ -1,7 +1,4 @@
-
 /* CSS Test */
-
-
 
 /**
  * The zoomslider in the second map shall be placed between the zoom-in and
@@ -57,6 +54,13 @@
 /* Layer Switcher */
 
 .layer-switcher {
-  float: right;
   color: blue;
+}
+.layer-switcher button {
+  /* 버튼 아이콘 변경 */
+  background-image: url('../../logo.svg');
+}
+
+.layer-switcher .panel {
+  background: gray;
 }

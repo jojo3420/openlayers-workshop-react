@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import OlMap from "components/map/OlMap";
+import OlMapContainer from "components/map/OlMapContainer";
 
 function App() {
   return (
     <>
-      <OlMap/>
+      <OlMapContainer/>
     </>
   );
 }
